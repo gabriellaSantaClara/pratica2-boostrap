@@ -30,11 +30,12 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5>Gerenciar Produtos:</h5>
       <!-- Botão para abrir modal -->
-      <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalCadastro">
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCadastro">
         Novo Produto
       </button>
     </div>
 
+    <!--Tabelas com 4 produtos e botao de editar e excluir-->
     <table class="table table-bordered text-center">
       <thead class="table-light">
         <tr>
@@ -52,8 +53,8 @@
           <td>R$ 1.000,00</td>
           <td>110</td>
           <td>
-            <button class="btn btn-secondary btn-sm">Editar</button>
-            <button class="btn btn-secondary btn-sm">Excluir</button>
+            <button class="btn btn-primary btn-sm">Editar</button>
+            <button class="btn btn-danger btn-sm">Excluir</button>
           </td>
         </tr>
         <tr>
@@ -62,8 +63,8 @@
           <td>R$ 600,00</td>
           <td>8</td>
           <td>
-            <button class="btn btn-secondary btn-sm">Editar</button>
-            <button class="btn btn-secondary btn-sm">Excluir</button>
+            <button class="btn btn-primary btn-sm">Editar</button>
+            <button class="btn btn-danger btn-sm">Excluir</button>
           </td>
         </tr>
         <tr>
@@ -72,25 +73,27 @@
           <td>R$ 1.500,00</td>
           <td>10</td>
           <td>
-            <button class="btn btn-secondary btn-sm">Editar</button>
-            <button class="btn btn-secondary btn-sm">Excluir</button>
+            <button class="btn btn-primary btn-sm">Editar</button>
+            <button class="btn btn-danger btn-sm">Excluir</button>
           </td>
         </tr>
+        <!-- Entre as linhas da tabela, deve haver um exemplo de produto com estoque 0. E nesse caso, o texto indicando a quantidade 0
+        deve ser estilizado para cor vermelho.-->
         <tr>
           <td>4</td>
           <td>Umidificador</td>
           <td>R$ 100,00</td>
           <td><span class="text-danger fw-bold">0</span></td>
           <td>
-            <button class="btn btn-secondary btn-sm">Editar</button>
-            <button class="btn btn-secondary btn-sm">Excluir</button>
+            <button class="btn btn-primary btn-sm">Editar</button>
+            <button class="btn btn-danger btn-sm">Excluir</button>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Modal de cadastro -->
+  <!-- Modal de cadastro centralizado-->
   <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
