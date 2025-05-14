@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loja WA</title>
+    <!-- Incluindo o Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align-items-center" style="height: 100vh;">
+        <!-- Coluna para o título à direita -->
+          <div class="col-12 col-md-6 d-flex justify-content-left">
+          <h1>Bem-vindo à WA Loja!</h1>
+        </div>
+
+        <!-- Coluna para o formulário à esquerda -->
+        <div class="col-12 col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu email" required />
+            </div>
+            <div class="form-group">
+              <label for="confirmar-email">Confirmar email</label>
+              <input type="email" class="form-control" id="confirmar-email" placeholder="Confirmar email" required />
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" placeholder="Sua senha" required />
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Confirmar cadastro</button>
+          </form>
+          <div class="text-center mt-3">
+            <a href="login.html">Já possui cadastro?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Incluindo o JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
